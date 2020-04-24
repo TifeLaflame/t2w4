@@ -1,0 +1,674 @@
+    /* GLOBAL CSS */
+    
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #fff;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .container h2 {
+        font-size: 2.1rem;
+        font-weight: 800;
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+    
+    .move {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.1rem;
+    }
+    /* HEADER SECTION */
+    
+    @media only screen and (min-width: 1200px) {
+        .container {
+            max-width: 1220px;
+        }
+    }
+    
+    h1#logo {
+        background-image: url(../imgs/gloverlogo-01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 210px;
+        height: 60px;
+        float: left;
+    }
+    
+    h1#logo a {
+        height: 100%;
+        width: 100%;
+        text-indent: -99999px;
+        float: left;
+    }
+    
+    .header {
+        position: relative;
+    }
+    
+    .icon svg {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: Icons;
+        font-weight: 400;
+        line-height: 1;
+    }
+    
+    span .icon {
+        font-size: 14px;
+    }
+    
+    .mainNav {
+        background-color: #F9F9FB !important;
+        height: 70px;
+        z-index: 3;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-item a.nav-link {
+        color: #3f3f3f;
+        font-weight: 600;
+        font-size: ;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hEffect:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #ffdd00;
+        transition: width .3s;
+    }
+    
+    .hEffect:hover:after {
+        width: 100%;
+        transition: width .3s;
+        margin-left: 0px;
+    }
+    /* RESPONSIVE FOR NAVIGATION */
+    
+    @media only screen and (max-width: 650px) {
+        .mainNav {
+            background-color: #F9F9FB;
+            position: relative;
+            top: 0;
+            padding: 10px 15px;
+        }
+        .icon svg {
+            top: -2px;
+            display: inline-block;
+            line-height: 1;
+        }
+        .navbar-toggler {
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .navbar-nav {
+            background-color: #F9F9FB;
+        }
+        #navbarNav {
+            text-align: center;
+            margin-top: -10px;
+        }
+        #navbarNav a {
+            padding: 15px;
+        }
+    }
+    /* HERO SECTION CSS */
+    
+    .wrapper {
+        padding-top: 70px;
+    }
+    
+    .heroSection {
+        position: relative;
+        height: 650px;
+    }
+    
+    .heroImage {
+        background-image: url(../imgs/gloverlanehero.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 650px;
+    }
+    
+    div.one-third {
+        width: 60%;
+    }
+    
+    div.one-forth {
+        width: 40%;
+    }
+    
+    .heading h1 {
+        font-weight: 800;
+        font-size: 48px;
+        color: #3f3f3f
+    }
+    
+    .heading p {
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 20px;
+        color: #3f3f3f;
+        line-height: 1.7em;
+    }
+    
+    a.btn {
+        text-transform: uppercase;
+    }
+    
+    a.btnPri,
+    a.btnTer {
+        color: #3f3f3f;
+        font-size: 20px;
+        font-weight: 800;
+        background-color: #ffdd00;
+        margin-right: 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+        transition: 0.5s background-color;
+        border-radius: 30px;
+        cursor: pointer;
+        padding: 9px 18px;
+        margin-top: 10px;
+    }
+    
+    .cta {
+        padding-top: 60px;
+    }
+    
+    a.btnSec {
+        font-weight: 600;
+        border: 2px solid #ffdd00;
+    }
+    /* RESPONSIVE FOR HERO SECTION */
+    
+    @media only screen and (max-width: 650px) {
+        .heroSection {
+            z-index: 0;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        .hero {
+            text-align: center;
+        }
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        div.one-third {
+            width: 100%;
+            position: relative;
+            z-index: 0;
+            padding-top: 20px;
+        }
+        div.one-forth {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            padding: 1em;
+        }
+        .heroImage {
+            background-position: center center;
+        }
+        .hero {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .heading {
+            padding-top: 70px;
+        }
+        .heading .innerhead {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 2em;
+        }
+        .heading h1 {
+            font-size: 30px;
+        }
+        .heading p {
+            font-size: 19px;
+        }
+        .cta {
+            margin: 0 auto;
+        }
+        a.btnPri,
+        a.btnTer {
+            font-size: 18px;
+            margin-right: 0;
+        }
+        a.btnSec {
+            font-size: 16px;
+            color: #F9F9FB;
+        }
+    }
+    /* COMPANY CULTURE SECTION */
+    
+    .separator {
+        border-color: #ffdd00;
+        border-style: solid;
+        width: 36px;
+        border-bottom-width: 7px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+    
+    h4,
+    .list-group-item {
+        font-weight: 600;
+    }
+    
+    .list-group-item {
+        font-size: 16px;
+        padding: .5rem .8rem;
+    }
+    
+    h4 {
+        font-weight: 18px;
+        color: #1a75e8;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card,
+    .card .list-group-item {
+        background-color: #F9F9FB;
+    }
+    
+    .cultSec {
+        margin-top: 20px;
+    }
+    
+    .cultSec h2 {
+        padding-bottom: 7px;
+    }
+    /* RESPONSIVE FOR COMPANY CULTURE  */
+    
+    @media only screen and (max-width: 650px) {
+        .container h2 {
+            font-size: 1.7rem;
+            padding-top: 14px;
+        }
+        .separator {
+            border-bottom-width: 5px;
+        }
+        #special {
+            color: #3f3f3f;
+        }
+    }
+    /* JOB DESCRIPTION SECTION */
+    
+    .jobDesc h2,
+    .introSec h3 {
+        padding-bottom: 7px;
+    }
+    
+    .jobDesc h2,
+    .jobDesc p,
+    li {
+        color: #3f3f3f;
+    }
+    
+    .introSec h3 {
+        color: #1a75e8;
+        font-weight: 600;
+    }
+    
+    .jobDesc p {
+        font-weight: 600;
+    }
+    
+    .infoSec {
+        background-color: #F9F9FB;
+    }
+    
+    .skills ul,
+    .reqSec ul {
+        list-style-type: disc;
+        padding: 20px;
+    }
+    
+    .infoSec {
+        padding: 20px;
+    }
+    
+    .cta2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .compLogos {
+        background-color: #F9F9FB;
+    }
+    
+    @media only screen and (min-width: 900px) {
+        .compImg {
+            flex-basis: 20%;
+        }
+    }
+    /* RESPONSIVE FOR JOB DESCRIPTION */
+    
+    @media only screen and (max-width: 650px) {
+        .introSec h3 {
+            font-size: 1.5rem;
+        }
+        .move {
+            font-size: 1.03rem;
+        }
+        .jobDesc p {
+            font-size: 0.95rem;
+        }
+        .compLogos {
+            display: none;
+        }
+    }
+    /* BENEFITS AND PERKS SECTION */
+    
+    .perkSec {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .perks {
+        background-color: #F9F9FB;
+        padding: 20px;
+    }
+    
+    .perks {
+        text-align: center;
+    }
+    /* FOOTER/LOCATION SECTION */
+    
+    footer {
+        background-color: #F9F9FB;
+        color: #3f3f3f;
+    }
+    
+    .footerText {
+        padding-top: 40px;
+        margin-top: 20px;
+    }
+    
+    .footerText h3 {
+        font-weight: 600;
+    }
+    
+    .address {
+        padding-top: 20px;
+    }
+    
+    .footerDet h5 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .footerDet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .footerDet p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    
+    .footerDet img {
+        padding-right: 8px;
+    }
+    /* RESPONSIVE LOCATION/FOOTER SECTION */
+    
+    @media only screen and (max-width: 650px) {
+        .introSec h3 {
+            font-size: 1.5rem;
+        }
+        .move {
+            font-size: 1.03rem;
+        }
+        .jobDesc p {
+            font-size: 1rem;
+        }
+        .d-flex {
+            flex-direction: column;
+        }
+        .footerDet {
+            text-align: center;
+        }
+        .footerText h3 {
+            font-size: 1.4rem;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    /* CONTACT MODAL */
+    
+    .modal {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        width: 550px;
+        margin-left: -280px;
+        background-color: #F9F9FB;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, .3);
+        background-clip: padding-box;
+        max-height: 700px;
+    }
+    
+    .modal h2 {
+        font-weight: 600;
+        text-align: center;
+        padding: 1em 0.25em;
+    }
+    
+    .formData {
+        color: #3f3f3f;
+    }
+    
+    label {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18px;
+        text-align: left;
+        padding-top: 10px;
+    }
+    
+    input,
+    textarea {
+        box-shadow: none;
+        width: 400px;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"] {
+        height: 25px;
+        padding: 20px;
+    }
+    
+    input[type="file"] {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    #contactModal {
+        border: 0;
+        border-radius: 14px;
+        border-top-width: 14px;
+        border-top-style: solid;
+        border-top-color: #FFdd00;
+        top: 5%;
+    }
+    
+    #contactModal .modal-body {
+        padding: 0 4.5em;
+        min-height: 525px;
+    }
+    
+    .modal-body {
+        max-height: 580px;
+        padding: 15px;
+    }
+    
+    .modal #closeModal {
+        position: absolute;
+        display: block;
+        z-index: 1051;
+        top: 14px;
+        right: 18px;
+        text-decoration: none;
+    }
+    
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: #000;
+    }
+    
+    input[type="submit"] {
+        color: #3f3f3f;
+        font-size: 20px;
+        font-weight: 800;
+        background-color: #ffdd00;
+        margin-right: 20px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        padding: 9px 18px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .modal {
+        height: 850px;
+    }
+    /* RESPONSIVE  FOR MODAL */
+    
+    @media only screen and (max-width: 650px) {
+        .modal {
+            width: 92%;
+            margin: 0 auto;
+            margin-left: 0px;
+            position: fixed;
+            left: 0;
+            top: 5%;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 25px;
+        }
+        input,
+        textarea {
+            box-shadow: none;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .cta2 {
+            padding-bottom: 20px;
+        }
+    }
+    /* TESTIMONIAL CSS */
+    
+    .imgCurve {
+        border-radius: 7px;
+    }
+    
+    .testSec2 p {
+        font-size: 1rem;
+        padding-left: 40px;
+        line-height: 1.8;
+        padding-top: 10px;
+    }
+    
+    .quoteText {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .quoteText p {
+        font-weight: 800;
+        font-size: 1.1rem;
+    }
+    
+    .testSec3 {
+        padding-top: 50px;
+    }
+    
+    @media only screen and (max-width: 650px) {
+        .testSec2 p {
+            padding-left: 0px;
+            padding-top: 10px;
+            font-size: 0.9rem;
+        }
+        .testSec3 {
+            padding-top: 10px;
+        }
+        .quoteText p {
+            margin-top: -10px;
+        }
+        ol li {
+            display: none;
+        }
+    }
+    
+    .theroImg {
+        background-image: url("../imgs/thero.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .theroText {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #3f3f3f;
+    }
+    
+    .theroText h1 {
+        font-weight: 800;
+        font-size: 45px;
+    }
+    
+    .theroText p {
+        font-weight: 600;
+        font-size: 20px;
+    }
